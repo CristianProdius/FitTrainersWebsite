@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { BiMinus } from "react-icons/bi";
 import { BsPlusLg } from "react-icons/bs";
 
