@@ -51,7 +51,7 @@ const Features = () => {
         </div>
         <div className="relative flex items-start justify-center ">
           <video controls className="w-full h-auto rounded-[30px]">
-            <source src="./FeaturesVideo.mp4" type="video/mp4" />
+            <source src="./FeaturesVideo.mp4#t=0.1" type="video/mp4" />
           </video>
           <p className="absolute m-4 pt-4 text-xl font-extrabold tracking-tight leading-none  xl:text-2xl uppercase">
             Clear Video instructions
