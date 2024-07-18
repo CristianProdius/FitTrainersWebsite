@@ -5,7 +5,7 @@ const PromoTab = () => {
     <div className="bg-secondary rounded-[40px]  md:flex md:flex-row justify-between  max-w-[1240px] mx-auto px-4 pt-8 shadow-top">
       <div className=" text-white md:w-[30%] py-3 ml-5">
         {" "}
-        <h1 className="flex flex-wrap mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-4xl uppercase">
+        <h1 className="mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-4xl uppercase">
           Modern Personal Account
         </h1>
         <ul className="text-xl md:text-2xl space-y-4">

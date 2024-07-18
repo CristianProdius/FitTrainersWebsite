@@ -4,7 +4,7 @@ import PromoTab from "./PromoTab";
 const Hero = () => {
   return (
     <>
-      <section className="bg-background">
+      <section>
         <div className=" md:flex md:flex-row justify-between items-center max-w-[1240px] mx-auto px-4 pt-10">
           <div className="text-center md:text-left">
             <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white uppercase">
