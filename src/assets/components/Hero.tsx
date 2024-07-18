@@ -1,4 +1,3 @@
-import React from "react";
 import { MdOutlineDiscount } from "react-icons/md";
 import PromoTab from "./PromoTab";
 
