@@ -16,7 +16,7 @@ const HomePage = () => {
       <BeforeAfter />
       <FAQ />
       <div className="bg-main max-w-[1240px] py-8 text-center mx-auto flex flex-col items-center justify-center rounded-[30px] mb-12">
-        <h1 className="mb-8 text-2xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-4xl uppercase ">
+        <h1 className="mb-8 px-2 text-2xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-4xl uppercase ">
           Are you ready to change your life?
         </h1>
         <a
