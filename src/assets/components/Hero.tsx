@@ -1,39 +1,45 @@
 import React from "react";
 import { MdOutlineDiscount } from "react-icons/md";
+import PromoTab from "./PromoTab";
 
 const Hero = () => {
   return (
-    <div className="grid  px-4 pt-8 mx-auto lg:gap-8 xl:gap-0 lg:pt-16 lg:grid-cols-12 max-w-[1240px]">
-      <div className="mr-auto mt-20 lg:col-span-6">
-        <h1 className="max-w-2xl mb-4 text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl text-white uppercase">
-          I'll build you a dream body{" "}
-          <span className="text-gray">
-            {" "}
-            in a short time and without rollback
-          </span>
-        </h1>
+    <>
+      <section className="bg-background">
+        <div className=" md:flex md:flex-row justify-between items-center max-w-[1240px] mx-auto px-4 pt-10">
+          <div className="">
+            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white uppercase">
+              I'll build you a dream body{" "}
+              <span className="text-[#646262]">
+                in a short time and without rollback
+              </span>
+            </h1>
 
-        <div className="mt-12">
-          <a
-            href="#"
-            className="inline-flex items-center justify-center px-8 py-5 mr-3 text-2xl font-bold text-center  text-background rounded-[40px] bg-main "
-          >
-            Select a Program
-          </a>
-          <p className="inline-flex items-center justify-center px-8 py-6 text-xl font-bold text-center  text-white rounded-[40px] bg-secondary">
-            And get a discount{" "}
-            <MdOutlineDiscount className="ml-4 text-main text-" />
-          </p>
+            <a
+              href="#"
+              className="inline-flex items-center justify-center px-5 py-3 mr-3 font-bold text-center text-background rounded-lg text-2xl bg-main"
+            >
+              Select a program
+            </a>
+            <a
+              href="#"
+              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white"
+            >
+              And get a discount{" "}
+              <MdOutlineDiscount className="ml-2 text-main" />
+            </a>
+          </div>
+          <div className="flex items-center justify-center">
+            <img
+              src="ArteomHome.png"
+              alt="main arteomn"
+              className="transform scale-x-[-1] pt-7 mx-auto block"
+            />
+          </div>
         </div>
-      </div>
-      <div className="lg:mt-0 lg:col-span-6 flex justify-end items-center">
-        <img
-          src="./ArteomHome.png"
-          alt="mockup"
-          className="transform scale-x-[-1] w-8/12 h-auto"
-        />
-      </div>
-    </div>
+      </section>
+      <PromoTab />
+    </>
   );
 };
 
