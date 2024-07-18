@@ -8,7 +8,7 @@ const Header = () => {
     setNav(!nav);
   };
 
-  const menuItems = ["Home", "Programs", "Why us", "Plans", "Testimonials"];
+  const menuItems = ["Home", "Why us", "Programs", "Testimonials"];
   const listItemClasses = "cursor-pointer hover:text-main";
   const buttonClasses =
     "py-4 px-12  font-bold text-white bg-secondary rounded-[20px] hover:text-background hover:bg-gradient-to-r hover:from-[#53980E] hover:to-main lg:block hidden";
