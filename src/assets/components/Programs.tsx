@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Programs = () => {
   return (
     <div className="bg-secondary rounded-[30px] mx-4">
@@ -100,16 +102,16 @@ const Programs = () => {
                 <span>Access to online community and resources</span>
               </li>
             </ul>
-            <a
-              href="#"
+            <Link
+              to="/join"
               className="text-white bg-[#2b2b2b]  hover:text-background hover:bg-gradient-to-r hover:from-[#53980E] hover:to-main  font-medium rounded-lg text-xl px-5 py-2.5 text-center  "
             >
               Join Now
-            </a>
+            </Link>
           </div>
 
           <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-white  rounded-[15px] bg-[#252525]  shadow  xl:p-8 ">
-            <h3 className="mb-4 text-2xl font-semibold">Cardio Boost</h3>
+            <h3 className="mb-4 text-2xl font-semibold">Powerlift</h3>
             <p className="font-light text-gray-500 sm:text-lg ">
               Ideal for individuals looking to improve their cardiovascular
               health and overall fitness.
@@ -204,12 +206,12 @@ const Programs = () => {
                 </span>
               </li>
             </ul>
-            <a
-              href="#"
-              className="text-white bg-primary-600  hover:bg-gradient-to-r hover:from-[#53980E] hover:to-main hover:text-background  font-medium rounded-[15px] text-xl px-5 py-2.5 text-center  bg-[#2b2b2b]"
+            <Link
+              to="/join"
+              className="text-white bg-[#2b2b2b]  hover:text-background hover:bg-gradient-to-r hover:from-[#53980E] hover:to-main  font-medium rounded-lg text-xl px-5 py-2.5 text-center  "
             >
               Join Now
-            </a>
+            </Link>
           </div>
 
           <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-white  rounded-[15px] bg-[#252525] shadow  xl:p-8 ">
@@ -303,12 +305,12 @@ const Programs = () => {
                 <span>Access to online community and resources</span>
               </li>
             </ul>
-            <a
-              href="#"
-              className="text-white bg-[#2b2b2b] hover:text-background hover:bg-gradient-to-r hover:from-[#53980E] hover:to-main font-medium rounded-[15px] text-xl px-5 py-2.5 text-center  "
+            <Link
+              to="/join"
+              className="text-white bg-[#2b2b2b]  hover:text-background hover:bg-gradient-to-r hover:from-[#53980E] hover:to-main  font-medium rounded-lg text-xl px-5 py-2.5 text-center  "
             >
-              Start your journey
-            </a>
+              Join Now
+            </Link>
           </div>
         </div>
       </div>

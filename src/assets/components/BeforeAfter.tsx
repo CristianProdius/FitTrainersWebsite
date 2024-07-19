@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const BeforeAfter = () => {
   return (
     <div className="max-w-[1240px] mx-auto py-12">
@@ -16,72 +18,63 @@ const BeforeAfter = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="./1.jpg"
+              src="./2.jpg"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
+              src="./3.jpg"
               alt=""
             />
           </div>
         </div>
         <div className="grid gap-4">
           <div>
+            <div className="h-auto max-w-full rounded-lg bg-[#383838] py-8 px-4">
+              <h1
+                className="mb-12 text-2xl font-extrabold tracking-tight leading-none md:text-xl xl:text-2xl text-white
+               uppercase w-full"
+              >
+                You decide your future
+              </h1>
+              <Link
+                to="/join"
+                className=" text-background bg-gradient-to-r from-[#8dff96] to-main hover:text-main hover:from-background hover:to-black  font-medium rounded-[30px] text-xl px-8 py-6 text-center "
+              >
+                Join Now
+              </Link>
+            </div>
+          </div>
+          <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+              src="./5.jpg"
               alt=""
             />
           </div>
           <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
-            />
+            <img className="h-auto max-w-full rounded-lg" src="./2.jpg" />
           </div>
         </div>
         <div className="grid gap-4">
           <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
-            />
+            <img className="h-auto max-w-full rounded-lg" src="./3.jpg" />
           </div>
           <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
-            />
+            <img className="h-auto max-w-full rounded-lg" src="./2.jpg" />
           </div>
           <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
-            />
+            <img className="h-auto max-w-full rounded-lg" src="./4.jpg" />
           </div>
         </div>
         <div className="grid gap-4">
           <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
-            />
+            <img className="h-auto max-w-full rounded-lg" src="./5.jpg" />
           </div>
           <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
-            />
+            <img className="h-auto max-w-full rounded-lg" src="./3.jpg" />
           </div>
           <div>
             <div className="h-auto max-w-full rounded-lg bg-main py-8 px-4">
@@ -91,12 +84,12 @@ const BeforeAfter = () => {
               >
                 You are in control of your life
               </h1>
-              <a
-                href="#"
+              <Link
+                to="/join"
                 className="text-background bg-white  hover:text-background hover:bg-gradient-to-r hover:from-[#8dff96] hover:to-main  font-medium rounded-[30px] text-xl px-5 py-2.5 text-center mt-4"
               >
                 Join Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { MdOutlineDiscount } from "react-icons/md";
 import PromoTab from "./PromoTab";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -14,19 +15,18 @@ const Hero = () => {
               </span>
             </h1>
             <div className="flex items-center justify-center md:justify-start">
-              <a
-                href="#"
+              <Link
+                to="programs"
+                spy={true}
+                smooth={true}
                 className="inline-flex items-center justify-center text-xl px-1 sm:px-2 py-2 md:px-5 md:py-3 mr-3 font-bold text-center text-background rounded-lg md:text-2xl bg-main"
               >
                 Select a program
-              </a>
-              <a
-                href="#"
-                className="inline-flex items-center justify-center text-l px-1 sm:px-2 py-2 md:px-5 md:py-3 text-base font-medium text-center md:text-2xl text-white"
-              >
+              </Link>
+              <p className="inline-flex items-center justify-center text-l px-1 sm:px-2 py-2 md:px-5 md:py-3 text-base font-medium text-center md:text-2xl text-white">
                 And get a discount{" "}
                 <MdOutlineDiscount className="ml-2 text-main" />
-              </a>
+              </p>
             </div>
           </div>
           <div className="flex items-center justify-center">

@@ -17,15 +17,12 @@ const Footer = () => {
               </h2>
               <ul className="text-white">
                 <li className="mb-4">
-                  <a href="https://flowbite.com" className="hover:underline">
+                  <a href="#" className="hover:underline">
                     Nutrition
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://tailwindcss.com/"
-                    className="hover:underline"
-                  >
+                  <a href="#" className="hover:underline">
                     Anatomy
                   </a>
                 </li>
@@ -45,7 +42,11 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a
+                    href="tg://resolve?domain=artem_grabovsky
+                    "
+                    className="hover:underline"
+                  >
                     Telegram
                   </a>
                 </li>
@@ -81,7 +82,7 @@ const Footer = () => {
           </span>
           <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
             <a
-              href="#"
+              href="https://www.facebook.com/share/NQm8Wv3VTBAqwpz9/?mibextid=LQQJ4d"
               className="text-white hover:text-main
             "
             >
@@ -98,7 +99,10 @@ const Footer = () => {
                 />
               </svg>
             </a>
-            <a href="#" className="text-white hover:main">
+            <a
+              href="https://www.instagram.com/grabovsky.fit/"
+              className="text-white hover:main"
+            >
               <svg
                 className="w-5 h-5"
                 fill="currentColor"
@@ -113,7 +117,11 @@ const Footer = () => {
               </svg>
             </a>
 
-            <a href="#" className="text-white">
+            <a
+              href="tg://resolve?domain=artem_grabovsky
+              "
+              className="text-white"
+            >
               <FaTelegram className="hover:text-main" size={20} />
             </a>
           </div>

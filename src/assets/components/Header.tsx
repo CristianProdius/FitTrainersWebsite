@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 
 const Header = () => {
   const [nav, setNav] = useState(true);
@@ -8,7 +10,12 @@ const Header = () => {
     setNav(!nav);
   };
 
-  const menuItems = ["Home", "Why us", "Programs", "Testimonials"];
+  const menuItems = [
+    { name: "Home", path: "/home" },
+    { name: "Features", path: "/home#features" },
+    { name: "Programs", path: "/home#programs" },
+    { name: "Results", path: "/home#results" },
+  ];
   const listItemClasses = "cursor-pointer hover:text-main";
   const buttonClasses =
     "py-4 px-12  font-bold text-white bg-secondary rounded-[20px] hover:text-background hover:bg-gradient-to-r hover:from-[#53980E] hover:to-main lg:block hidden";
@@ -17,11 +24,16 @@ const Header = () => {
 
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4">
-      <img src="/Logo.png" alt="Logo" className="h-12 lg:h-14" />
+      <RouterLink to="/">
+        <img src="/Logo.png" alt="Logo" className="h-12 lg:h-14" />
+      </RouterLink>
+
       <ul className="hidden lg:flex list-none text-white bg-secondary rounded-[20px] space-x-6 py-4 px-12 text-2xl">
         {menuItems.map((item) => (
-          <li key={item} className={listItemClasses}>
-            {item}
+          <li key={item.name} className={listItemClasses}>
+            <Link to={item.name.toLowerCase()} spy={true} smooth={true}>
+              {item.name}
+            </Link>
           </li>
         ))}
       </ul>
@@ -40,8 +52,10 @@ const Header = () => {
       >
         <ul className="flex flex-col list-none text-white bg-background space-y-6 py-4 px-12 text-xl items-center">
           {menuItems.map((item) => (
-            <li key={item} className={listItemClasses}>
-              {item}
+            <li key={item.name} className={listItemClasses}>
+              <Link to={item.name.toLowerCase()} spy={true} smooth={true}>
+                {item.name}
+              </Link>
             </li>
           ))}
           <button className={buttonClasses2}>Account</button>

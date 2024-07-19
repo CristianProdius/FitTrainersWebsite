@@ -1,18 +1,20 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import HomePage from "./assets/pages/HomePage";
-import AboutPage from "./assets/pages/AboutPage";
-import ProgramMen from "./assets/pages/ProgramMen";
-import ProgramFull from "./assets/pages/ProgramFull";
+import Muscle from "./assets/pages/Muscle";
+import Powerlift from "./assets/pages/Powerlift";
+import Fat from "./assets/pages/Fat";
+import Join from "./assets/pages/Join";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/men_program" element={<ProgramMen />} />
-        <Route path="/full_program" element={<ProgramFull />} />
+        <Route path="/muscle" element={<Muscle />} />
+        <Route path="/powerlift" element={<Powerlift />} />
+        <Route path="/fat" element={<Fat />} />
+        <Route path="/join" element={<Join />} />
       </Routes>
     </Router>
   );
