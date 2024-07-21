@@ -50,12 +50,24 @@ const Join = () => {
                 <input
                   type="text"
                   placeholder={t("Your name")}
-                  className="w-full md:w-96 px-4 py-2 mt-4 md:mt-0 md:mr-4 rounded-lg"
+                  className="w-full md:w-96 px-4 py-2 mt-4 md:mt-0 md:mr-4 rounded-lg "
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder={t("Phone number or Telgram username")}
+                  className="w-full md:w-96 px-4 py-2 mt-4 md:mt-0 md:mr-4 rounded-lg "
+                  required
                 />
                 <input
                   type="email"
                   placeholder={t("Your email")}
                   className="w-full md:w-96 px-4 py-2 mt-4 md:mt-0 md:mr-4 rounded-lg"
+                />
+                <input
+                  type="text"
+                  placeholder={t("If you would like to add any notes")}
+                  className="w-full md:w-96 px-4 py-2 mt-4 md:mt-0 md:mr-4 rounded-lg "
                 />
                 <select
                   className="w-full md:w-96 px-4 py-2 mt-4 md:mt-0 md:mr-4 rounded-lg"
