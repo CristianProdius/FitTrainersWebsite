@@ -2,6 +2,8 @@ import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
+import LanguageSelector from "./LanguageSelector";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const [nav, setNav] = useState(true);
@@ -10,20 +12,17 @@ const Header = () => {
     setNav(!nav);
   };
 
+  const { t } = useTranslation();
   const menuItems = [
-    { name: "Home", path: "/home" },
-    { name: "Features", path: "/home#features" },
-    { name: "Programs", path: "/home#programs" },
-    { name: "Results", path: "/home#results" },
+    { name: t("Home"), path: "/home" },
+    { name: t("Features"), path: "/home#features" },
+    { name: t("Programs"), path: "/home#programs" },
+    { name: t("Results"), path: "/home#results" },
   ];
   const listItemClasses = "cursor-pointer hover:text-main";
-  const buttonClasses =
-    "py-4 px-12  font-bold text-white bg-secondary rounded-[20px] hover:text-background hover:bg-gradient-to-r hover:from-[#53980E] hover:to-main lg:block hidden";
-  const buttonClasses2 =
-    "py-4 px-12   font-bold text-white bg-secondary rounded-[20px] hover:text-background hover:bg-gradient-to-r hover:from-[#53980E] hover:to-main ";
 
   return (
-    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4">
+    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 ">
       <RouterLink to="/">
         <img src="/Logo.png" alt="Logo" className="h-12 lg:h-14" />
       </RouterLink>
@@ -37,7 +36,10 @@ const Header = () => {
           </li>
         ))}
       </ul>
-      <button className={buttonClasses}>Account</button>
+
+      <div className="hidden lg:block">
+        <LanguageSelector />
+      </div>
       <div onClick={handleNav} className=" lg:hidden">
         {!nav ? (
           <AiOutlineClose size={32} className="text-white" />
@@ -58,7 +60,7 @@ const Header = () => {
               </Link>
             </li>
           ))}
-          <button className={buttonClasses2}>Account</button>
+          <LanguageSelector />
         </ul>
       </div>
     </div>

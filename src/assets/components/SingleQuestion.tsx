@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BiMinus } from "react-icons/bi";
 import { BsPlusLg } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 
 export default function SingleQuestion({
   question,
@@ -10,6 +11,7 @@ export default function SingleQuestion({
   answer: string;
 }) {
   const [showAnswer, setShowAnswer] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <>
@@ -19,7 +21,7 @@ export default function SingleQuestion({
             className="cursor-pointer text-white text-l lg:text-xl font-bold"
             onClick={() => setShowAnswer(!showAnswer)}
           >
-            {question}
+            {t(question)}
           </h2>
           <ul>
             {!showAnswer && (
@@ -44,7 +46,7 @@ export default function SingleQuestion({
             showAnswer && " border-t border-gray-400 p-4 lg:p-6 text-white"
           }`}
         >
-          {showAnswer && <p>{answer}</p>}
+          {showAnswer && <p>{t(answer)}</p>}
         </article>
       </div>
     </>
