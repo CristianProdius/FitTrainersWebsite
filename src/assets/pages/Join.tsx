@@ -55,7 +55,7 @@ const Join = () => {
                 />
                 <input
                   type="text"
-                  placeholder={t("Phone number or Telgram username")}
+                  placeholder={t("Telgram username")}
                   className="w-full md:w-96 px-4 py-2 mt-4 md:mt-0 md:mr-4 rounded-lg "
                   required
                 />
