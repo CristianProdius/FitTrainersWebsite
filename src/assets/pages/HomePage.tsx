@@ -6,8 +6,21 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Programs from "../components/Programs";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const HomePage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const hash = location.hash;
+    if (hash) {
+      setTimeout(() => {
+        const element = document.getElementById(hash.substring(1));
+        if (element) element.scrollIntoView({ behavior: "smooth" });
+      }, 0);
+    }
+  }, [location]);
   return (
     <div className=" bg-background ">
       <Header />

@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 type WorkoutType = "fat" | "muscle" | "powerlift";
 
@@ -13,8 +15,21 @@ const workoutOptions: Record<WorkoutType, { text: string; image: string }> = {
 
 const Join = () => {
   const [selectedWorkout, setSelectedWorkout] = useState<WorkoutType | "">("");
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const workoutFromQuery = queryParams.get("workout") as WorkoutType | null;
+
+  useEffect(() => {
+    if (workoutFromQuery) {
+      setSelectedWorkout(workoutFromQuery);
+    }
+  }, [workoutFromQuery]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div className="bg-background min-h-screen  ">
+    <div className="bg-background ">
       <Header />
       <section className="py-24 mx-auto max-w-[1240px] bg-secondary rounded-[30px] my-16">
         <div className="grid gap-4 md:grid-cols-2 px-8">

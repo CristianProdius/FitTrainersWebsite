@@ -31,9 +31,9 @@ const Header = () => {
       <ul className="hidden lg:flex list-none text-white bg-secondary rounded-[20px] space-x-6 py-4 px-12 text-2xl">
         {menuItems.map((item) => (
           <li key={item.name} className={listItemClasses}>
-            <Link to={item.name.toLowerCase()} spy={true} smooth={true}>
+            <RouterLink to={`/#${item.name.toLowerCase()}`}>
               {item.name}
-            </Link>
+            </RouterLink>
           </li>
         ))}
       </ul>
