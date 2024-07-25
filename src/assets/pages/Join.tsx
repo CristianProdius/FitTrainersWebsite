@@ -42,8 +42,8 @@ const Join = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const botToken = "7054987515:AAEwh1QUpLoG6ugXmHoykj0sxZGBf24Q0Do";
-    const chatId = "5563365270";
+    const botToken = import.meta.env.VITE_BOT_TOKEN;
+    const chatId = import.meta.env.VITE_CHAT_ID;
     const text = `Name: ${name}\nUsername: ${username}\nEmail: ${email}\nNotes: ${notes}\nSelected Workout: ${selectedWorkout}`;
 
     await fetch(
