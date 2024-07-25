@@ -43,7 +43,7 @@ const BeforeAfter = () => {
               </h1>
               <Link
                 to="/join"
-                className=" text-background bg-gradient-to-r from-[#8dff96] to-main hover:text-main hover:from-background hover:to-black  font-medium rounded-[30px] text-xl px-8 py-2 text-center "
+                className=" text-background bg-gradient-to-r from-[#8dff96] to-main hover:text-main hover:from-background hover:to-black  font-medium rounded-[30px] text-xl px-8 py-2 text-center whitespace-nowrap "
               >
                 {t("Join Now")}
               </Link>
@@ -88,7 +88,7 @@ const BeforeAfter = () => {
               </h1>
               <Link
                 to="/join"
-                className="text-background bg-white  hover:text-background hover:bg-gradient-to-r hover:from-[#8dff96] hover:to-main  font-medium rounded-[30px] text-xl px-5 py-2.5 text-center mt-4"
+                className="text-background bg-white  hover:text-background hover:bg-gradient-to-r hover:from-[#8dff96] hover:to-main  font-medium rounded-[30px] text-xl px-5 py-2.5 text-center mt-4 whitespace-nowrap "
               >
                 {t("Join Now")}
               </Link>
