@@ -44,13 +44,21 @@ const Join = () => {
 
     const botToken = import.meta.env.VITE_BOT_TOKEN;
     const chatId = import.meta.env.VITE_CHAT_ID;
+    const chatId2 = import.meta.env.VITE_CHAT_ID2;
     const text = `Name: ${name}\nUsername: ${username}\nEmail: ${email}\nNotes: ${notes}\nSelected Workout: ${selectedWorkout}`;
 
-    await fetch(
-      `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(
-        text
-      )}`
-    );
+    await Promise.all([
+      fetch(
+        `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(
+          text
+        )}`
+      ),
+      fetch(
+        `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId2}&text=${encodeURIComponent(
+          text
+        )}`
+      ),
+    ]);
 
     setIsSubmitted(true);
     // Clear the form
